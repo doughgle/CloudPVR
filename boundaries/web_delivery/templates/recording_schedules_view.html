@@ -1,0 +1,21 @@
+$def with(schedule_list)
+$var title: Recording Schedules
+
+<table>
+<tr>
+<th>Name</th>
+<th>Source</th>
+<th>Start</th>
+<th>End</th>
+<th>Status</th>
+</tr>
+
+$for schedule in schedule_list:    
+    <tr>
+        <td>$schedule.name</td>
+        <td>$schedule.source</td>
+        <td>$schedule.start_date_time</td>
+        <td>$schedule.end_date_time</td>
+        <td><a href="/play">$schedule.status</a></td>
+    </tr>
+</table>

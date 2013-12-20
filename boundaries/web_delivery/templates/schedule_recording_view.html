@@ -1,0 +1,17 @@
+$def with(form, controls)
+$var title: Schedule Recording
+
+<head>
+<script language="javascript" type="text/javascript" src="/static/datetimepicker.js">
+
+//Date Time Picker script- by TengYong Ng of http://www.rainforestnet.com
+//Script featured on JavaScript Kit (http://www.javascriptkit.com)
+//For this script, visit http://www.javascriptkit.com 
+
+</script>
+</head>
+
+<form method="POST">
+	$:form.render()
+    $:controls.cancel.render() $:controls.schedule.render() 
+</form>
